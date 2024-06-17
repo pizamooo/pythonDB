@@ -6,73 +6,64 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>383</width>
-    <height>346</height>
+    <width>326</width>
+    <height>272</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="sign_up">
+   <widget class="QLineEdit" name="lineEdit_username">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>200</y>
-      <width>121</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Зарегистрироваться</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>119</x>
-      <y>133</y>
-      <width>133</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>Пароль</string>
-    </property>
-    <property name="maxLength">
-     <number>200</number>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="sign_up_2">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>200</y>
+      <x>100</x>
+      <y>60</y>
       <width>113</width>
-      <height>51</height>
+      <height>20</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Войти</string>
+    <property name="placeholderText">
+     <string>Username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="lineEdit_password">
     <property name="geometry">
      <rect>
-      <x>119</x>
-      <y>89</y>
-      <width>133</width>
-      <height>31</height>
+      <x>100</x>
+      <y>100</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_login">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Логин</string>
+     <string>Log in</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_register">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Register</string>
     </property>
    </widget>
   </widget>
@@ -81,7 +72,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>383</width>
+     <width>326</width>
      <height>21</height>
     </rect>
    </property>
