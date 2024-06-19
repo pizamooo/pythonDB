@@ -18,6 +18,12 @@ class DBManager:
         if not username or not password:
             return False
         cursor = self.conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username=? AND password=?",
+                       (username, password))
+        existing_user = cursor.fetchone()
+        if existing_user:
+            False
+
         cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)",
                        (username, password))
         self.conn.commit()

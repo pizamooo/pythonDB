@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from login_form import Ui_MainWindow
 from db_manager import DBManager
 
+
 class LoginWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -22,8 +23,6 @@ class LoginWindow(QMainWindow, Ui_MainWindow):
         else:
             QMessageBox.warning(self, "Error", "Invalid username or password")
 
-        
-
     def register(self):
         username = self.lineEdit_username.text()
         password = self.lineEdit_password.text()
@@ -31,7 +30,6 @@ class LoginWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Success", "Registered successfully")
         else:
             QMessageBox.warning(self, "Error", "Registration failed")
-
 
 
 if __name__ == "__main__":
